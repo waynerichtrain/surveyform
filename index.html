@@ -10,14 +10,26 @@
         <h1 id="title">freeCodeCamp Survey Form</h1>
         <p id="description">Thank you for taking the time to help us improve the platform</p>
         <form id="survey-form" action="" method="post">
-            <label id="name-label" for="name">Name</label><input id="name" type="text" placeholder="Enter your name">
-            <label id="email-label" for="email">Email</label><input id="email" type="email" placeholder="Enter your Email">
-            <label id= "number-label" for="age">Age</label><input id="number" type="number" min="18" max="120" placeholder="Age">
-            <select id="dropdown">
-                <option value="1">Select current role</option>
-                <option value="1">Student</option>
-                <option value="1">Full time job</option>
+            <label id="name-label">Name</label><input id="name" type="text" placeholder="Enter your name" value="name" required>
+            <label id="email-label">Email</label><input id="email" type="email" placeholder="Enter your Email" value="email" required>
+            <label id="number-label">Age</label><input id="number" type="number" min="18" max="120" placeholder="Age" value="number">
+            <label for="dropdown">Which option best describes your current role?</label>
+                <select id="dropdown">
+                    <option value="1">Select current role</option>
+                    <option value="1">Student</option>
+                    <option value="1">Full time job</option>
             </select>
+            <input id="definitely" type="radio" name="referrer" value="definitely"><label for="definitely"> Definitely</label>
+            <input id="maybe" type="radio" name="referrer" value="maybe"><label for="maybe"> Maybe</label>
+            <input id="not-sure" type="radio" name="referrer" value="not-sure"><label for="not-sure"> Not sure</label>
+            <input id="front-end" type="checkbox" name="suggestion" value="front-end"><label for="front-end"> Front-end Projects</label>
+            <input id="back-end" type="checkbox" name="suggestion" value="back-end"><label for="back-end"> Back-end Projects</label>
+            <input id="data-viz" type="checkbox" name="suggestion" value="data-viz"><label for="data-viz"> Data Visualization</label>
+            <textarea></textarea>
+            <input id="submit" type="submit" value="Submit">
         </form>
     </body>
 </html>
+
+<!-- Code above as per FCC "Build a Survey Form" project guidelines - https://www.freecodecamp.org/learn/2022/responsive-web-design/build-a-survey-form-project/build-a-survey-form -->
+<!-- TODO: Recreate - https://survey-form.freecodecamp.rocks -->
